@@ -28,3 +28,14 @@ document
   .addEventListener("click", function software() {
     document.body.style.fontSize = "40px";
   });
+
+// input event handler
+document.getElementById("btn-update").addEventListener("click", function () {
+  const nameInput = document.getElementById("input-name");
+
+  const name = nameInput.value;
+
+  const nameP = document.getElementById("name");
+
+  nameP.innerText = name;
+});
