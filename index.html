@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- OPTION 1 FOR EVENT HANDLER -->
-        <div>
-            <div class="flex justify-center my-10 ">
-            <h1 class="font-bold text-5xl hover:scale-105 transition-transform duration-300">I am here</h1>
+      <!-- OPTION 1 FOR EVENT HANDLER -->
+      <div>
+        <div class="flex justify-center my-10">
+          <h1
+            class="font-bold text-5xl hover:scale-105 transition-transform duration-300"
+          >
+            I am here
+          </h1>
         </div>
         <div class="flex justify-evenly p-5 gap-3 font-bold">
-            <button class="bg-gradient-to-r from-[#ff8838] to-[#FF0000] hover:scale-105 transition-transform duration-300 p-4 rounded-lg" onclick="console.log('ok')">Eplore more</button>
+          <button
+            class="bg-gradient-to-r from-[#ff8838] to-[#FF0000] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+            onclick="console.log('ok')"
+          >
+            Eplore more
+          </button>
 
-        <button class="bg-gradient-to-r from-[#3888ff] to-[#bfff00] hover:scale-105 transition-transform duration-300 p-4 rounded-lg" onclick="console.log('yes sir!')">Home</button>
+          <button
+            class="bg-gradient-to-r from-[#3888ff] to-[#bfff00] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+            onclick="console.log('yes sir!')"
+          >
+            Home
+          </button>
 
-        <button class="bg-gradient-to-r from-[#38f2ff] to-[#4dff00] hover:scale-105 transition-transform duration-300 p-4 rounded-lg" onclick="console.log('01')">Contuct US</button>
+          <button
+            class="bg-gradient-to-r from-[#38f2ff] to-[#4dff00] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+            onclick="console.log('01')"
+          >
+            Contuct US
+          </button>
         </div>
-        </div>
+      </div>
     </header>
 
-
-        <div class="mt-10 flex justify-center">
-            <button class="bg-gradient-to-r from-[#ff8838] to-[#FF0000] hover:scale-105 transition-transform duration-300 p-4 rounded-lg" onclick="nowMyTurn()">
-            now my trun ! Waite and see
-        </button>
-        </div>
-        <div class="mt-10 flex justify-center">
-            <button class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg" onclick="youCan()">
-            Yes you can do it !
-        </button>
-        </div>
-
-        <div class="mt-19 flex justify-center">
-            <button id="make-it" class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg">
-                Make it parfect
-            </button>
-        </div>
-
-        <script>
-         
-        </script>
     <main>
+      <div class="mt-10 flex justify-center">
+        <button
+          class="bg-gradient-to-r from-[#ff8838] to-[#FF0000] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+          onclick="nowMyTurn()"
+        >
+          now my trun ! Waite and see
+        </button>
+      </div>
+      <div class="mt-10 flex justify-center">
+        <button
+          class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+          onclick="youCan()"
+        >
+          Yes you can do it !
+        </button>
+      </div>
 
+      <div class="mt-19 flex justify-center">
+        <button
+          id="make-it"
+          class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+        >
+          Make it parfect
+        </button>
+      </div>
+
+      <!-- option 4 :  addEventListener -->
+
+      <div class="mt-10 flex justify-center">
+        <button id="network-engineer"
+          class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+        >
+          I am a Network Engineer
+        </button>
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <button id="software-engineer"
+          class="bg-gradient-to-r from-[#38ffb9] to-[#00a6ff] hover:scale-105 transition-transform duration-300 p-4 rounded-lg"
+        >
+          I want to become a software engineer
+        </button>
+      </div>
+      
 
     </main>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
-
+    <script>
+        
+    </script>
 
     <script src="js/events.js"></script>
-</body>
+  </body>
 </html>
