@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+</head>
+<body>
+    <h1>Hi Everybody</h1>
+
+    <section>
+        <h3>List of thigs</h3>
+
+        <!-- ol>li#item-$*6>lorem2 -->
+         <ol id="item-list">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Assumenda, corporis!</li>
+            <li id="item-3">Expedita, atque.</li>
+            <li id="item-4">Voluptate, recusandae.</li>
+            <li id="item-5">Voluptatibus, voluptatum.</li>
+            <li id="item-6">Dolore, sunt?</li>
+         </ol>
+    </section>
+
+    <script>
+        // list item 2 click event handler
+        document.getElementById('item-2').addEventListener('click', function(event){
+            // prevent the event from bubbling up to the ol element
+            
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
+            // log a message to the console
+           console.log('Item 2 clicked');
+        })
+        // ol click event handler
+        document.getElementById('item-list').addEventListener('click', function(){
+           console.log('ol clicked');
+        })
+    </script>
+</body>
+</html>
