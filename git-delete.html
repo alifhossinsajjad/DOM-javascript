@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Delete</title>
+</head>
+<body>
+    <h1 id="secrete-info">My secrete info</h1>
+    <input id="input-delete" type="text" placeholder="write delete">
+    <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+        document.getElementById('input-delete').addEventListener('input', function() {
+            const inputValue = this.value;
+            const deleteButton = document.getElementById('btn-delete');
+            if (inputValue === 'delete') {
+                deleteButton.disabled = false;
+            const secreteTag = document.getElementById('secrete-info')
+            secreteTag.style.display = 'none';
+            } else {
+                deleteButton.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
