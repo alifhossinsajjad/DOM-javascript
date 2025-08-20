@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Event</title>
+</head>
+<body>
+    <button id="btn-mouse">Micy mouse</button>
+    <input id="user-name" type="text" placeholder="Your Name" >
+    <input id="user-email" type="email" placeholder="Write your email" >
+    <script>
+        // way nob 1 in mouse event
+        document.getElementById('btn-mouse').addEventListener('mouseover', function(){
+            console.log("Mouse is over the button");
+        })
+        // way nob 2 in mouse event
+
+        document.getelimentById('btn-mouse').addEventListener('mousemove', function(){
+            console.log("Mouse is moving over the button");
+        })
+        // way nob 3 in mouse event
+        document.getElementById('btn-mouse').addEventListener('mouseout', function(){
+            console.log("Mouse is out of the button");
+        })
+
+        document.getelimentById('user-name').addEventListener('focus', function(){
+            console.log('write your name');
+        })
+        document.getelimentById('user-email').addEventListener('focus', function(){
+            console.log('write your email');
+        })
+        document.getelimentById('user-name').addEventListener('blur', function(){
+            console.log('write your name done');
+        })
+        document.getelimentById('user-email').addEventListener('blur', function(){
+            console.log('write your  email done');
+        })
+    </script>
+</body>
+</html>
